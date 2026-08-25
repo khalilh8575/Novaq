@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NOVAQ | تقنية بأسلوب مختلف</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- الخلفية -->
+  <div class="background">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <!-- الشريط العلوي -->
+  <header class="navbar">
+
+    <a href="#" class="logo">
+      <span>N</span>
+      NOVAQ
+    </a>
+
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <button class="cart" onclick="openCart()">
+      🛒
+      <span id="cartCount">0</span>
+    </button>
+
+  </header>
+
+
+  <!-- الصفحة الرئيسية -->
+  <main id="home">
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="badge">
+          ✦ تقنية مختارة بعناية
+        </div>
+
+        <h1>
+          مستقبلك<br>
+          <span>بين يديك.</span>
+        </h1>
+
+        <p>
+          اكتشف أحدث الإكسسوارات والأجهزة التقنية
+          بتجربة شراء مختلفة تمامًا.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#products" class="primary-btn">
+            اكتشف المنتجات
+            <span>←</span>
+          </a>
+
+          <a href="#about" class="secondary-btn">
+            تعرف علينا
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- المنتج الرئيسي -->
+      <div class="hero-product">
+
+        <div class="product-glow"></div>
+
+        <div class="product-card">
+
+          <div class="floating-tag">
+            NEW
+          </div>
+
+          <div class="product-icon">
+            🎧
+          </div>
+
+          <div class="product-info">
+            <small>NOVAQ COLLECTION</small>
+            <h2>Future Audio</h2>
+            <p>صوت واضح. تصميم أنيق.</p>
+
+            <div class="price">
+              $39
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- المميزات -->
+    <section class="features">
+
+      <div class="feature">
+        <div>🚚</div>
+        <h3>توصيل سريع</h3>
+        <p>نوصل طلبك بأسرع وقت ممكن.</p>
+      </div>
+
+      <div class="feature">
+        <div>🛡️</div>
+        <h3>ضمان موثوق</h3>
+        <p>منتجات مختارة بجودة عالية.</p>
+      </div>
+
+      <div class="feature">
+        <div>💎</div>
+        <h3>اختيارات مميزة</h3>
+        <p>نختار لك المنتجات بعناية.</p>
+      </div>
+
+    </section>
+
+
+    <!-- المنتجات -->
+    <section class="products-section" id="products">
+
+      <div class="section-title">
+        <span>مختاراتنا</span>
+        <h2>منتجات تستحق التجربة</h2>
+        <p>تقنية عملية، تصميم جميل، وسعر مناسب.</p>
+      </div>
+
+
+      <div class="products-grid">
+
+        <div class="product">
+
+          <div class="product-image">
+            🎧
+            <span>الأكثر مبيعًا</span>
+          </div>
+
+          <div class="product-body">
+            <small>NOVAQ AUDIO</small>
+            <h3>سماعة لاسلكية</h3>
+            <p>صوت نقي وعزل ممتاز.</p>
+
+            <div class="product-bottom">
+              <strong>$35</strong>
+
+              <button onclick="addToCart('سماعة لاسلكية', 35)">
+                أضف للسلة +
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="product">
+
+          <div class="product-image">
+            🔋
+            <span>NEW</span>
+          </div>
+
+          <div class="product-body">
+            <small>NOVAQ POWER</small>
+            <h3>شاحن سريع</h3>
+            <p>طاقة أسرع بحجم صغير.</p>
+
+            <div class="product-bottom">
+              <strong>$22</strong>
+
+              <button onclick="addToCart('شاحن سريع', 22)">
+                أضف للسلة +
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="product">
+
+          <div class="product-image">
+            💡
+            <span>HOT</span>
+          </div>
+
+          <div class="product-body">
+            <small>NOVAQ CREATOR</small>
+            <h3>إضاءة تصوير</h3>
+            <p>إضاءة احترافية للهاتف.</p>
+
+            <div class="product-bottom">
+              <strong>$18</strong>
+
+              <button onclick="addToCart('إضاءة تصوير', 18)">
+                أضف للسلة +
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- من نحن -->
+    <section class="about" id="about">
+
+      <div class="about-box">
+
+        <span>WHY NOVAQ</span>
+
+        <h2>
+          أكثر من مجرد<br>
+          <strong>متجر تقني.</strong>
+        </h2>
+
+        <p>
+          NOVAQ هو مفهوم جديد للتسوق التقني.
+          نبحث عن المنتجات التي تجمع بين التصميم،
+          الجودة، والسعر المناسب، ونقدمها لك بطريقة
+          بسيطة ومختلفة.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- التواصل -->
+    <section class="contact" id="contact">
+
+      <div class="section-title">
+        <span>تواصل معنا</span>
+        <h2>خلينا نحكي.</h2>
+        <p>عندك سؤال؟ نحن هنا لمساعدتك.</p>
+      </div>
+
+      <a class="whatsapp" href="https://wa.me/9647500000000">
+        تواصل عبر WhatsApp →
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- السلة -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()">
+
+    <div class="cart-box" onclick="event.stopPropagation()">
+
+      <div class="cart-header">
+        <h2>سلة المشتريات</h2>
+        <button onclick="closeCart()">×</button>
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-total">
+        <span>المجموع</span>
+        <strong>$<span id="cartTotal">0</span></strong>
+      </div>
+
+      <button class="checkout" onclick="checkout()">
+        إتمام الطلب عبر WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="logo">
+      <span>N</span>
+      NOVAQ
+    </div>
+
+    <p>© 2026 NOVAQ. جميع الحقوق محفوظة.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
